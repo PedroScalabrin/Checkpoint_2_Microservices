@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <h2>Exercício 4: Lista com Ações Dinâmicas</h2>
+  
+  <div class="card">
+    <div class="card-header">
+      Lista de Tarefas
+    </div>
+    <div class="card-body">
+      @if (tarefas.length > 0) {
+        <ul class="list-group">
+          @for (tarefa of tarefas; track $index) {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              {{ tarefa }}
+              <button class="btn btn-sm btn-danger" (click)="removerTarefa($index)">Remover</button>
+            </li>
+          }
+        </ul>
+      } @else {
+        <div class="alert alert-warning">
+          Nenhuma tarefa pendente
+        </div>
+      }
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-primary" (click)="restaurarTarefas()">Restaurar Tarefas</button>
+    </div>
+  </div>
+</div>

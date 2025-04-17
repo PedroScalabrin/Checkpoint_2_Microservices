@@ -1,0 +1,30 @@
+<div class="container mt-4">
+  <h2>Exercício 7: Switch com Números e Strings</h2>
+  
+  <div class="card">
+    <div class="card-header">
+      Valor Atual: {{ valor }} (tipo: {{ tipoValor }})
+    </div>
+    <div class="card-body">
+      <div class="mb-3">
+        <button class="btn btn-primary me-2" (click)="mudarParaNumero()">Valor = 1 (número)</button>
+        <button class="btn btn-secondary me-2" (click)="mudarParaString()">Valor = "dois" (string)</button>
+        <button class="btn btn-info" (click)="mudarParaOutro()">Valor = 3 (outro)</button>
+      </div>
+      
+      <div class="alert alert-info">
+        @switch (valor) {
+          @case (1) {
+            Um
+          }
+          @case ('dois') {
+            Dois
+          }
+          @default {
+            Valor não reconhecido
+          }
+        }
+      </div>
+    </div>
+  </div>
+</div>

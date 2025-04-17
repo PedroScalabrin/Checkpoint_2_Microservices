@@ -1,59 +1,34 @@
-# Checkpoint2
+# Checkpoint 2 - Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+Este projeto foi desenvolvido como parte do Checkpoint 2 da disciplina de Microservices.
 
-## Development server
+## Descrição
 
-To start a local development server, run:
+O projeto consiste em uma aplicação Angular que demonstra o uso das novas diretivas de controle de fluxo do Angular 17, como `@if`, `@else`, `@for`, `@empty` e `@switch`.
 
-```bash
-ng serve
-```
+## Exercícios Implementados
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. **Uso Básico do @switch**: Exibe o nome de um mês com base em um número (1 a 12).
+2. **Lista Dinâmica com @for**: Implementa uma lista de compras usando a diretiva @for.
+3. **Condicional com @if e @else**: Mostra "Acesso permitido" ou "Acesso negado" com base na idade.
+4. **Lista com Ações Dinâmicas**: Cria uma lista de tarefas com botões para remover itens.
+5. **Switch com Múltiplos Cases**: Exibe mensagens com base no status de um pedido.
+6. **Lista de Objetos com @for**: Exibe uma lista de usuários com nome e idade.
+7. **Switch com Números e Strings**: Demonstra o uso do @switch com diferentes tipos de dados.
+8. **Sistema de Login com @if e @else**: Valida credenciais de usuário.
+9. **Lista de Produtos com Condicionais**: Exibe produtos com destaque para itens em promoção.
+10. **Calculadora Simples com @switch**: Realiza operações matemáticas básicas.
 
-## Code scaffolding
+## Como executar
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Clone o repositório
+2. Instale as dependências: `npm install`
+3. Execute o servidor de desenvolvimento: `ng serve`
+4. Acesse a aplicação em: `http://localhost:4200`
 
-```bash
-ng generate component component-name
-```
+## Tecnologias utilizadas
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Angular 17
+- TypeScript
+- Bootstrap 5
+- HTML/CSS

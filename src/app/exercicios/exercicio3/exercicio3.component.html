@@ -1,0 +1,29 @@
+<div class="container mt-4">
+  <h2>Exercício 3: Condicional com if e else</h2>
+  
+  <div class="card">
+    <div class="card-header">
+      Verificação de Idade
+    </div>
+    <div class="card-body">
+      <h3>Idade atual: {{ idade }}</h3>
+      
+      <div class="mt-3">
+        @if (idade >= 18) {
+          <div class="alert alert-success">
+            Acesso permitido
+          </div>
+        } @else {
+          <div class="alert alert-danger">
+            Acesso negado
+          </div>
+        }
+      </div>
+      
+      <div class="mt-3">
+        <button class="btn btn-primary me-2" (click)="aumentarIdade()">Aumentar Idade</button>
+        <button class="btn btn-secondary" (click)="diminuirIdade()">Diminuir Idade</button>
+      </div>
+    </div>
+  </div>
+</div>

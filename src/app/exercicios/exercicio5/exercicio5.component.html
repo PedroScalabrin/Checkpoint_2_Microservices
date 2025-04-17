@@ -1,0 +1,39 @@
+<div class="container mt-4">
+  <h2>Exercício 5: Switch com Múltiplos Cases</h2>
+  
+  <div class="card">
+    <div class="card-header">
+      Status do Pedido
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="statusPedido">Selecione o status do pedido:</label>
+        <select id="statusPedido" class="form-control" [(ngModel)]="status">
+          @for (option of statusOptions; track option.value) {
+            <option [value]="option.value">{{ option.label }}</option>
+          }
+        </select>
+      </div>
+      
+      <div class="mt-3">
+        <h4>Mensagem de Status:</h4>
+        <div class="alert alert-info">
+          @switch (status) {
+            @case ('pendente') {
+              Aguardando confirmação
+            }
+            @case ('enviado') {
+              Pedido a caminho
+            }
+            @case ('entregue') {
+              Pedido entregue
+            }
+            @default {
+              Status desconhecido
+            }
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

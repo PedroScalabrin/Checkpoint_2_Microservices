@@ -1,0 +1,26 @@
+<div class="container mt-4">
+  <h2>Exercício 2: Lista Dinâmica com for</h2>
+  
+  <div class="card">
+    <div class="card-header">
+      Lista de Compras
+    </div>
+    <div class="card-body">
+      @if (itens.length > 0) {
+        <ul class="list-group">
+          @for (item of itens; track $index) {
+            <li class="list-group-item">{{ item }}</li>
+          }
+        </ul>
+      } @else {
+        <div class="alert alert-warning">
+          Nenhum item na lista
+        </div>
+      }
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-danger me-2" (click)="limparLista()">Limpar Lista</button>
+      <button class="btn btn-primary" (click)="adicionarItens()">Restaurar Lista</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <h2>Exercício 6: Lista de Objetos com for</h2>
+  
+  <div class="card">
+    <div class="card-header">
+      Lista de Usuários
+    </div>
+    <div class="card-body">
+      @if (usuarios.length > 0) {
+        <ul class="list-group">
+          @for (usuario of usuarios; track usuario.nome) {
+            <li class="list-group-item">
+              Nome: {{ usuario.nome }}, Idade: {{ usuario.idade }}
+            </li>
+          }
+        </ul>
+      } @else {
+        <div class="alert alert-warning">
+          Nenhum usuário cadastrado
+        </div>
+      }
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-danger me-2" (click)="limparUsuarios()">Limpar Usuários</button>
+      <button class="btn btn-primary" (click)="restaurarUsuarios()">Restaurar Usuários</button>
+    </div>
+  </div>
+</div>
