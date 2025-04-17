@@ -19,16 +19,7 @@ O projeto consiste em uma aplicação Angular que demonstra o uso das novas dire
 9. **Lista de Produtos com Condicionais**: Exibe produtos com destaque para itens em promoção.
 10. **Calculadora Simples com @switch**: Realiza operações matemáticas básicas.
 
-## Como executar
+## Author
 
-1. Clone o repositório
-2. Instale as dependências: `npm install`
-3. Execute o servidor de desenvolvimento: `ng serve`
-4. Acesse a aplicação em: `http://localhost:4200`
-
-## Tecnologias utilizadas
-
-- Angular 17
-- TypeScript
-- Bootstrap 5
-- HTML/CSS
+**Nome:** Pedro Chiosini Scalabrin  
+**RA:** RM 98914
