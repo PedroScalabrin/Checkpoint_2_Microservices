@@ -19,7 +19,7 @@ O projeto consiste em uma aplicação Angular que demonstra o uso das novas dire
 9. **Lista de Produtos com Condicionais**: Exibe produtos com destaque para itens em promoção.
 10. **Calculadora Simples com @switch**: Realiza operações matemáticas básicas.
 
-## Author
+## Autor
 
 **Nome:** Pedro Chiosini Scalabrin  
 **RA:** RM 98914
